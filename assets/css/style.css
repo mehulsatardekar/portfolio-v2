@@ -527,6 +527,11 @@ main {
   margin-bottom: 15px;
 }
 
+.about-text strong {
+  font-weight: 700;
+  color: var(--white-1);
+}
+
 /**
  * #service 
  */
@@ -872,6 +877,20 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+}
+
+ul.timeline-text {
+  margin-top: 12px;
+  padding-left: 1.25em;
+}
+
+ul.timeline-text > li {
+  list-style: disc outside;
+  padding-left: 0.25em;
+}
+
+ul.timeline-text > li + li {
+  margin-top: 10px;
 }
 
 /**
@@ -2080,4 +2099,54 @@ textarea.form-input::-webkit-resizer {
   .info-content > .profile-tabs {
     flex-direction: column;
   }
+}
+.about-skills {
+  margin: 36px 0;
+}
+.about-skills > h3 {
+  margin-bottom: 24px;
+}
+.skill-chip-group + .skill-chip-group {
+  margin-top: 24px;
+}
+.skill-chip-label {
+  margin-bottom: 12px;
+  color: #a7a7ad;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+}
+.skill-chips > li {
+  max-width: 100%;
+  padding: 7px 12px;
+  border: 1px solid #454545;
+  border-radius: 10px;
+  background: #272727;
+  color: #dedede;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  list-style: none;
+}
+.sidebar .avatar-box {
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.sidebar .avatar-box img {
+  display: block;
+  aspect-ratio: 1;
+  height: auto;
+  object-fit: cover;
+  object-position: center bottom;
 }
